@@ -1,5 +1,6 @@
 package com.cloud.common.dto;
 
+import com.alibaba.fastjson.JSONObject;
 import com.cloud.common.enums.ResultCode;
 
 import java.io.Serializable;
@@ -51,5 +52,8 @@ public class BaseRespDTO implements Serializable {
         this.message = message;
     }
 
-
+    @Override
+    public String toString() {
+        return JSONObject.toJSONString(this);
+    }
 }
