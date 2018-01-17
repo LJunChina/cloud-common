@@ -12,7 +12,8 @@ public enum ResultCode {
     NO_PRIVILEGE("7000","无相关权限"),
     INVALID_USER("9013","非法用户"),
     INVALID_CODE("9013","验证码错误"),
-    LOGIN_EFFICACY("8001","登录失效");
+    LOGIN_EFFICACY("8001","登录失效"),
+    NOT_SUPPORT_ENCODE("2222","不支持的编码类型");
 
     private String code;
     private String message;
