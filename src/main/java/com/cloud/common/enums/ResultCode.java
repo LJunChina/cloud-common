@@ -11,8 +11,9 @@ public enum ResultCode {
     USER_NAME_OR_PASSWORD_ERROR("9012","用户名或密码错误"),
     NO_DATA_FOUND("未查询到任何数据","4000"),
     NO_PRIVILEGE("7000","无相关权限"),
-    INVALID_USER("9013","非法用户"),
+    INVALID_USER("9014","非法用户"),
     INVALID_CODE("9013","验证码错误"),
+    INVALID_PARAM("9015","非法参数"),
     LOGIN_EFFICACY("8001","登录失效"),
     NOT_SUPPORT_ENCODE("2222","不支持的编码类型");
 
