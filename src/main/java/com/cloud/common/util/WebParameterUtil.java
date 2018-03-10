@@ -25,15 +25,14 @@ public final class WebParameterUtil {
             return uri;
         }
         StringBuilder builder = new StringBuilder(uri);
+        builder.append("?");
         Set<Map.Entry<String,String>> entrySet = params.entrySet();
         entrySet.forEach(e -> {
-            builder.append("?");
             builder.append(e.getKey());
-            builder.append("=");
-            builder.append(e.getValue());
-            builder.append("&");
+            builder.append("={");
+            builder.append(e.getKey());
+            builder.append("}&");
         });
         return builder.toString().substring(0,builder.length() - 1);
     }
-
 }
